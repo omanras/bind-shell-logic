@@ -66,7 +66,7 @@ while True:
 					encode = base64.b64encode(str(encoded_cipher).encode())	
 				c.send(encode)
 	except KeyboardInterrupt:
-		c.send("[ctrl+c] server forcely closed by Victim.")
+		c.send("[ctrl+c] server forcely closed.")
 		s.close()
 		sys.exit(1)
 """
